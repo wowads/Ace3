@@ -24,6 +24,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      - name: Install git-svn
+        run: apt install git-svn
+        
       # Runs a single command using the runners shell
       - name: Fetch
         run: git svn fetch
