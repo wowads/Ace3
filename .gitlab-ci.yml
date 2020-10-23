@@ -5,6 +5,6 @@ update:
     stage: update
     before_script:
         - apt-get update
-        - apt-get install git git-svn
+        - apt-get install git git-svn -y
     script:
         - git svn fetch
