@@ -7,4 +7,4 @@ update:
         - apt-get update
         - apt-get install git git-svn -y
     script:
-        - git svn fetch
+        - git svn rebase
