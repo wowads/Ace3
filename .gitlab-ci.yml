@@ -1,0 +1,10 @@
+stages:
+    - update
+
+update:
+    stage: update
+    before_script:
+        - apt-get update
+        - apt-get install git git-svn
+    script:
+        - git svn fetch
